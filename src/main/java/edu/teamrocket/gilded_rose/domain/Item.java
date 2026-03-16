@@ -4,12 +4,12 @@ final class Item {
 
     private final String name;
 
-    private int sellIn = 0;
+    private int sell_in = 0;
     private int quality = 0;
 
-    Item(String name, int sellIn, int quality) {
+    Item(String name, int sell_in, int quality) {
         this.name = name;
-        this.sellIn = sellIn;
+        this.sell_in = sell_in;
         this.quality = quality;
 
     }
@@ -19,7 +19,7 @@ final class Item {
         StringBuilder itemDescription = new StringBuilder();
         itemDescription.append("name=" + getName());
         itemDescription.append(", quality" + getQuality());
-        itemDescription.append(", sellIn=" + getSellIn());
+        itemDescription.append(", sell_in=" + getSell_in());
         return itemDescription.toString();
     }
 
@@ -27,16 +27,16 @@ final class Item {
         return name;
     }
 
-    int getSellIn() {
-        return sellIn;
+    int getSell_in() {
+        return sell_in;
     }
 
     int getQuality() {
         return quality;
     }
 
-    void setSellIn() {
-        this.sellIn = this.getSellIn() - 1;
+    void setSell_in() {
+        this.sell_in = this.getSell_in() - 1;
     }
 
     void setQuality(int value) {
