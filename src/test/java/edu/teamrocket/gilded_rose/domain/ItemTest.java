@@ -1,4 +1,4 @@
-package edu.teamrocket.gilded_rose.domain.domain;
+package edu.teamrocket.gilded_rose.domain;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
