@@ -45,7 +45,7 @@ public class NormalItem implements Updateable {
 
     @Override
     public void updateQuality() {
-        if (getSell_in() >= 0) {
+        if (getSell_in() > 0) {
             computeQuality(-1);
         } else {
             computeQuality(-2);
